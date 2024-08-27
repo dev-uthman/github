@@ -1,0 +1,30 @@
+ strings:
+   inputs:
+     - GithubProjectiOS/Resources/Strings
+   outputs:
+     - templateName: structured-swift5
+       output: GithubProjectiOS/Resources/Strings+Generated.swift
+       params:
+         publicAccess: true
+         enumName: Strings
+         
+# xcassets:
+#   inputs:
+#     - ../../Projects/SupergetAssets/SupergetAssets/Resources/images.xcassets
+#   outputs:
+#     - templateName: swift5
+#       output: ../../Projects/SupergetAssets/SupergetAssets/Resources/XCAssets+Generated.swift
+#       params:
+#         publicAccess: true
+#       
+# fonts:
+#   inputs:
+#     - ../../Projects/SupergetAssets/SupergetAssets/Resources/Fonts/Calibri
+#   filter: .+\.ttf$
+#   outputs:
+#     - templateName: swift4
+#       output: ../../Projects/SupergetAssets/SupergetAssets/Resources/Fonts+Generated.swift
+#       params:
+#         publicAccess: true
+#         enumName: Fonts
+
