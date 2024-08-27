@@ -1,20 +1,10 @@
 platform :ios, '12'
 inhibit_all_warnings!
 
-$firebase_version = '~> 10.22.0'
-#$baseURL = 'https://bitbucket.getnet.com.br/scm/sgm'
+$baseURL = 'https://github.com/dev-uthman'
 
-#$module_dskit = 'irineu/development'
-#$module_dskit_path = ''
-#
-$module_core = ''
-$module_core_path = '../github-core'
-#
-#$module_extract = '1.2.0'
-#$module_extract_path = ''
-#
-#$module_flutter = '1.2.9'
-#$module_flutter_path = ''
+$module_core = '0.1.0'
+$module_core_path = ''
 
 # ------------------------------------------------------
 # Configuração dos Scripts Build Phase
@@ -31,17 +21,10 @@ end
 def public_pods
   use_frameworks!
 
-  pod 'Firebase/Analytics', $firebase_version
-  pod 'Firebase/RemoteConfig', $firebase_version
-  pod 'Firebase/Crashlytics', $firebase_version
-  pod 'Firebase/Messaging', $firebase_version
-  pod 'Firebase/Performance', $firebase_version
-
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
   pod 'RxGesture', '4.0.4'
   pod 'SwiftGen', '6.6.2'
-  pod 'lottie-ios', '4.3.0'
 
   add_script_phase('SwiftGen', '"$PODS_ROOT/SwiftGen/bin/swiftgen"')
 end
